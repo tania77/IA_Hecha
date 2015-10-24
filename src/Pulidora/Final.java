@@ -71,7 +71,7 @@ public class Final extends JFrame implements ActionListener{
     public void imagenes(){
         bfondo = null;
         try {
-            bfondo = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/fondo.jpg"));
+            bfondo = ImageIO.read(new File("src/GUI/fondo.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
@@ -82,7 +82,7 @@ public class Final extends JFrame implements ActionListener{
         
         bpulidora = null;
         try {
-            bpulidora = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/pulidora.jpg"));
+            bpulidora = ImageIO.read(new File("src/GUI/pulidora.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
@@ -93,7 +93,7 @@ public class Final extends JFrame implements ActionListener{
         
         bfin = null;
         try {
-            bfin = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/final.jpg"));
+            bfin = ImageIO.read(new File("src/GUI/final.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
@@ -104,7 +104,7 @@ public class Final extends JFrame implements ActionListener{
         
         bobst = null;
         try {
-            bobst = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/banco.jpg"));
+            bobst = ImageIO.read(new File("src/GUI/banco.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
@@ -115,7 +115,7 @@ public class Final extends JFrame implements ActionListener{
         
         bfd = null;
         try {
-            bfd = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/flecha1.jpg"));
+            bfd = ImageIO.read(new File("src/GUI/flecha1.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
@@ -126,7 +126,7 @@ public class Final extends JFrame implements ActionListener{
         
         bfi = null;
         try {
-            bfi = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/flecha3.jpg"));
+            bfi = ImageIO.read(new File("src/GUI/flecha3.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
@@ -137,7 +137,7 @@ public class Final extends JFrame implements ActionListener{
         
         bfa = null;
         try {
-            bfa = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/flecha4.jpg"));
+            bfa = ImageIO.read(new File("src/GUI/flecha4.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
@@ -148,7 +148,7 @@ public class Final extends JFrame implements ActionListener{
         
         bfb = null;
         try {
-            bfb = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/flecha2.jpg"));
+            bfb = ImageIO.read(new File("src/GUI/flecha2.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }

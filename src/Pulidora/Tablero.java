@@ -59,7 +59,7 @@ public class Tablero extends JFrame implements ActionListener{
     public void imagenes(){
         bfondo = null;
         try {
-            bfondo = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/fondo.jpg"));
+            bfondo = ImageIO.read(new File("src/GUI/fondo.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
@@ -70,7 +70,7 @@ public class Tablero extends JFrame implements ActionListener{
         
         bpulidora = null;
         try {
-            bpulidora = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/pulidora.jpg"));
+            bpulidora = ImageIO.read(new File("src/GUI/pulidora.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
@@ -81,7 +81,7 @@ public class Tablero extends JFrame implements ActionListener{
         
         bfin = null;
         try {
-            bfin = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/final.jpg"));
+            bfin = ImageIO.read(new File("src/GUI/final.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
@@ -92,7 +92,7 @@ public class Tablero extends JFrame implements ActionListener{
         
         bobst = null;
         try {
-            bobst = ImageIO.read(new File("/home/tania/NetBeansProjects/Aeropuerto/src/GUI/banco.jpg"));
+            bobst = ImageIO.read(new File("src/GUI/banco.jpg"));
         } catch (IOException e) {
                 System.out.println("nfre");
         }
