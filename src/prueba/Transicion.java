@@ -1,5 +1,6 @@
-package Pulidora;
+package prueba;
 
+import Pulidora.Suelo;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -11,7 +12,7 @@ public class Transicion extends javax.swing.JFrame {
     private int fila,columna,nObst,posPulidora[],posFinal[], tamboton;
     private boolean casilla[][], posObst[][];
     private boolean rand;
-    Tablero tr;
+    Suelo tr;
     Final fn;
 
     public Transicion(int a[], boolean b[][], int c[], int d, int f, int l, boolean r, boolean ca[][]) {
@@ -148,7 +149,7 @@ public class Transicion extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         if(evt.getSource()==jButton3){
-            tr = new Tablero(fila,columna,nObst,rand);
+            tr = new Suelo(fila,columna,nObst,rand);
             this.dispose();
         }
     }//GEN-LAST:event_jButton3ActionPerformed

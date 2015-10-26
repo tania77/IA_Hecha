@@ -3,9 +3,9 @@ package Pulidora;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class Inicio extends javax.swing.JFrame {
+public class Panel extends javax.swing.JFrame {
 
-    public Inicio() {
+    public Panel() {
         super("Aeropuerto");
         this.setResizable(false);
         this.setLocationRelativeTo(null);
@@ -151,11 +151,11 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2KeyPressed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        if(jCheckBox1.isSelected()==true){
+        if(jCheckBox1.isSelected()==true){  //INGRESAR OBSTACULOS DE MANERA ALEATORIA
             aleatorio = true;
             jTextField3.setEnabled(true);        
         }
-        if(jCheckBox1.isSelected()==false){
+        if(jCheckBox1.isSelected()==false){ //INGRESAR OBSTACULOS DE MANERA MANUAL
             aleatorio = false;
             jTextField3.setEnabled(false);
         }
@@ -166,11 +166,11 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField3ActionPerformed
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         if(evt.getSource()==jButton2){
-            fila = Integer.parseInt(jTextField1.getText());
-            columna = Integer.parseInt(jTextField2.getText());
-            if(aleatorio==true)
+            fila = Integer.parseInt(jTextField1.getText());  //VARIABLE PARA NUMERO DE FILAS
+            columna = Integer.parseInt(jTextField2.getText()); //VARIABLE PARA NUMERO DE FILAS
+            if(aleatorio==true) //CASO OBSTACULOS ALEATORIOS
                 nObst = Integer.parseInt(jTextField3.getText());
-            Tablero t = new Tablero(fila,columna,nObst,aleatorio);
+            Suelo t = new Suelo(fila,columna,nObst,aleatorio);
             this.dispose();
         }
     }
@@ -184,19 +184,20 @@ public class Inicio extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Panel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Panel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Panel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Inicio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Panel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new Inicio().setVisible(true);
+            new Panel().setVisible(true);
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
