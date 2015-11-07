@@ -1,4 +1,4 @@
-package prueba;
+package Pulidora;
 
 
 public class Nodo {

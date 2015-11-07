@@ -1,6 +1,5 @@
-package prueba;
+package Pulidora;
 
-import prueba.Nodo;
 import java.awt.GridLayout;
 import java.awt.Image;
 import java.awt.event.ActionEvent;

@@ -1,5 +1,6 @@
-package prueba;
+package Pulidora;
 
+import Pulidora.Final;
 import Pulidora.Suelo;
 import java.util.logging.Level;
 import java.util.logging.Logger;
