@@ -20,8 +20,8 @@ public class Suelo extends JFrame implements ActionListener{
     private JButton button[][];
     private boolean casilla[][], posObst[][], aleatorio;
     Random rnd = new Random();
-   // private JButton continuar;
-   // Transicion t;
+    private JButton continuar;
+    Transicion t;
     JPanel principal, principal1;
     private BufferedImage bfondo, bpulidora, bfin, bobst;
     private ImageIcon fondo, pulidora, fin, banco;
@@ -110,9 +110,9 @@ public class Suelo extends JFrame implements ActionListener{
             }
         }
         
-       // continuar = new JButton("Continuar");
-       // continuar.addActionListener(this);
-        //add(continuar);
+        continuar = new JButton("Continuar");
+        continuar.addActionListener(this);
+        add(continuar);
         if(aleatorio==true){
             for(int k=0; k<nObst; k++){
                 int q,w,buf;
@@ -192,7 +192,7 @@ public class Suelo extends JFrame implements ActionListener{
                 }
             }            
         }
-      /*  if(continuar==e.getSource()){
+        if(continuar==e.getSource()){
             for(int i=0; i<fila; i++)
                 for(int j=0; j<columna; j++){
                     if(aleatorio==false){
@@ -228,6 +228,6 @@ public class Suelo extends JFrame implements ActionListener{
             t = new Transicion(posPulidora,posObst,posFinal,fila,columna,nObst,aleatorio,casilla);
             this.dispose();
         }
-    */
+    
     }
 }
