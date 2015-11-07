@@ -1,6 +1,5 @@
 package Pulidora;
 
-//import prueba.Transicion;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -20,8 +19,8 @@ public class Suelo extends JFrame implements ActionListener{
     private JButton button[][];
     private boolean casilla[][], posObst[][], aleatorio;
     Random rnd = new Random();
-   // private JButton continuar;
-   // Transicion t;
+    private JButton continuar;
+    Transicion t;
     JPanel principal, principal1;
     private BufferedImage bfondo, bpulidora, bfin, bobst;
     private ImageIcon fondo, pulidora, fin, banco;
@@ -109,10 +108,14 @@ public class Suelo extends JFrame implements ActionListener{
                 principal.add(button[x][y]);
             }
         }
+        setLayout(null);
+        continuar = new JButton("INICIAR");
+        continuar.setToolTipText("INICIAR");
+        continuar.setBackground(Color.GREEN);
+        continuar.setBounds(size+5,size+5,100,30);
+        add(continuar);
+        continuar.addActionListener(this);
         
-       // continuar = new JButton("Continuar");
-       // continuar.addActionListener(this);
-        //add(continuar);
         if(aleatorio==true){
             for(int k=0; k<nObst; k++){
                 int q,w,buf;
@@ -192,7 +195,7 @@ public class Suelo extends JFrame implements ActionListener{
                 }
             }            
         }
-      /*  if(continuar==e.getSource()){
+        if(continuar==e.getSource()){
             for(int i=0; i<fila; i++)
                 for(int j=0; j<columna; j++){
                     if(aleatorio==false){
@@ -209,7 +212,6 @@ public class Suelo extends JFrame implements ActionListener{
                         else if(count[i][j]==3){
                             posFinal[0] = i;
                             posFinal[1] = j;
-                            //casilla[i][j]=true;
                         }
                     }
                     else if(aleatorio==true){
@@ -221,13 +223,12 @@ public class Suelo extends JFrame implements ActionListener{
                         else if(count[i][j]==2){
                             posFinal[0] = i;
                             posFinal[1] = j;
-                            //casilla[i][j]=true;
                         }
                     }
                 }
             t = new Transicion(posPulidora,posObst,posFinal,fila,columna,nObst,aleatorio,casilla);
             this.dispose();
         }
-    */
+    
     }
 }
